@@ -1,0 +1,19 @@
+name: ray-serve-tutorial
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+- python=3.7.13
+- pip
+- pip:
+  - ipykernel
+  - fastapi
+  - joblib
+  - pandas
+  - pydantic
+  - python-dotenv
+  - ray[serve]
+  - redis
+  - starlette
+  - torch
+  - transformers

@@ -1,0 +1,5 @@
+env_vars:
+  REDIS_HOST: "localhost"
+  REDIS_PORT: "6379"
+working_dir: ./
+pip: ["fastapi","python-dotenv","ray[serve]","starlette","torch","transformers"]
