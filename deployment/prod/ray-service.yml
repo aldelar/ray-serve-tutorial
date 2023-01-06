@@ -12,7 +12,7 @@ spec:
   serveConfig:
     importPath: graph.deployment_graph
     runtimeEnv:  |
-      working_dir: https://
+      working_dir: https://github.com/aldelar/ray-serve-tutorial/blob/main/deployment/prod/service.zip
       pip: ["fastapi","python-dotenv","ray[serve]","starlette","torch","transformers"]
     deployments:
       - name: Translator
