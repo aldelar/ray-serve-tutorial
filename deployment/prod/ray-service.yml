@@ -68,14 +68,10 @@ spec:
                   valueFrom:
                     fieldRef:
                       fieldPath: status.podIP
-                - name: REDIS_HOST
-                  value: 
-                - name: REDIS_KEY
-                  value: 
               resources:
                 limits:
                   cpu: 8
-                  memory: 12Gi
+                  memory: 16Gi
                 requests:
                   cpu: 2
                   memory: 4Gi
@@ -171,7 +167,7 @@ spec:
                 resources:
                   limits:
                     cpu: "8"
-                    memory: "12Gi"
+                    memory: "16Gi"
                   requests:
                     cpu: "2"
                     memory: "4Gi"
