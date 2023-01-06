@@ -3,17 +3,12 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-- python=3.7.13
+- python=3.7.13 # need to match version of python in AKS runtime to be able to run with 'serve run' directly into AKS
 - pip
 - pip:
   - ipykernel
-  - fastapi
-  - joblib
-  - pandas
-  - pydantic
   - python-dotenv
   - ray[serve]
-  - redis
   - starlette
   - torch
   - transformers

@@ -8,7 +8,7 @@ metadata:
   labels:
     controller-tools.k8s.io: "1.0"
     # A unique identifier for the head node and workers of this cluster.
-  name: graph-raycluster-autoscaler
+  name: graph-raycluster-autoscaler-dev
 spec:
   # The version of Ray you are using. Make sure all Ray containers are running this version of Ray.
   rayVersion: '2.2.0'
@@ -42,8 +42,8 @@ spec:
     # However, for large Ray clusters, we recommend monitoring container resource usage to determine if overriding the defaults is required.
     resources:
       limits:
-        cpu: "8"
-        memory: "12Gi"
+        cpu: "4"
+        memory: "8Gi"
       requests:
         cpu: "2"
         memory: "4Gi"
@@ -86,8 +86,8 @@ spec:
           # entire Kubernetes node on which it is scheduled.
           resources:
             limits:
-              cpu: "8"
-              memory: "12Gi"
+              cpu: "4"
+              memory: "8Gi"
             requests:
               # For production use-cases, we recommend specifying integer CPU reqests and limits.
               # We also recommend setting requests equal to limits for both CPU and memory.
@@ -141,8 +141,8 @@ spec:
           # entire Kubernetes node on which it is scheduled.
           resources:
             limits:
-              cpu: "8"
-              memory: "12Gi"
+              cpu: "4"
+              memory: "8Gi"
             # For production use-cases, we recommend specifying integer CPU reqests and limits.
             # We also recommend setting requests equal to limits for both CPU and memory.
             # For this example, we use a 500m CPU request to accomodate resource-constrained local

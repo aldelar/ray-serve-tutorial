@@ -1,9 +1,17 @@
+import dotenv, os
+
 from starlette.requests import Request
 
 import ray
 from ray import serve
 
 from transformers import pipeline
+
+# showcase use of ENV variables (.env would be in gitignore for a real project)
+from dotenv import load_dotenv
+load_dotenv()
+VAR_1 = os.environ["VAR_1"]
+VAR_2 = os.environ["VAR_2"]
 
 @serve.deployment
 class Translator:

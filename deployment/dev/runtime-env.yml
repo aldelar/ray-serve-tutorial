@@ -1,0 +1,2 @@
+working_dir: ./
+pip: ["python-dotenv","ray[serve]","starlette","torch","transformers"]
